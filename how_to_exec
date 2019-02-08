@@ -1,0 +1,26 @@
+-----Odysync-Rozrost----
+
+
+---> requirement
+
+Unison - sudo apt-get install unison
+pyinotify - sudo apt-get install python-pyinotify
+ssh -  sudo apt-get -y install openssh-server ssh nano
+
+---> use
+sudo bash setup.sh
+
+python init.py -dir <src> -config <config-file>
+
+example:
+python init.py -dir /home/saket/source/ -config sync.cfg
+
+---> req files
+
+sync.cfg file contains list to directories to be synced.
+sample content for sync.cfg
+
+[sync.dirs]
+dir1: /home/saket/destination/1/
+dir2: /home/saket/destination/2/
+dir3: /home/saket/destination/3/

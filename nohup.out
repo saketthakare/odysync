@@ -1,0 +1,60 @@
+python /home/saket/odysync/master_init.py -dir /home/saket/sync/ -config /home/saket/odysync/sync.cfg &
+ssh rozrost@localhost python /home/rozrost/odysync/init.py -dir /home/rozrost/sync -destination_ip localhost -destination_user saket &
+Contacting server...
+Connected [//Tianhe-2//home/rozrost/sync -> //Tianhe-2//home/saket/sync]
+Looking for changes
+\ client.pkl              Waiting for changes from server
+Reconciling changes
+new file ---->            try123 (copy)  
+local        : new file           modified on 2017-02-27 at 22:31:11  size 0         rw-rw-r--
+Tianhe-2     : absent
+deleted  ---->            x12 (copy)  
+local        : deleted
+Tianhe-2     : unchanged file     modified on 2017-02-27 at 21:57:08  size 0         rw-rw-r--
+Propagating updates
+UNISON 2.40.102 started propagating changes at 21:59:25.29 on 13 Mar 2017
+[BGN] Copying try123 (copy) from /home/saket/sync to //Tianhe-2//home/rozrost/sync
+100%  00:00 ETA               Shortcut: copied /home/rozrost/sync/try123 (copy) from local file /home/rozrost/sync/x12 (copy)
+100%  00:00 ETA               [END] Copying try123 (copy)
+100%  00:00 ETA               [BGN] Deleting x12 (copy) from //Tianhe-2//home/rozrost/sync
+100%  00:00 ETA               [END] Deleting x12 (copy)
+100%  00:00 ETA               UNISON 2.40.102 finished propagating changes at 21:59:25.30 on 13 Mar 2017
+100%  00:00 ETA               Saving synchronizer state
+Synchronization complete at 21:59:25  (2 items transferred, 0 skipped, 0 failed)
+Contacting server...
+Connected [//Tianhe-2//home/rozrost/sync -> //Tianhe-2//home/saket/sync]
+Looking for changes
+| client.pkl              Waiting for changes from server
+Reconciling changes
+         <---- deleted    try123 (copy)  
+local        : unchanged file     modified on 2017-02-27 at 22:31:11  size 0         rw-rw-r--
+Tianhe-2     : deleted
+Propagating updates
+UNISON 2.40.102 started propagating changes at 21:59:35.52 on 13 Mar 2017
+[BGN] Deleting try123 (copy) from /home/rozrost/sync
+[END] Deleting try123 (copy)
+UNISON 2.40.102 finished propagating changes at 21:59:35.62 on 13 Mar 2017
+Saving synchronizer state
+Synchronization complete at 21:59:35  (1 item transferred, 0 skipped, 0 failed)
+Contacting server...
+Connected [//Tianhe-2//home/rozrost/sync -> //Tianhe-2//home/saket/sync]
+Looking for changes
+| client.pkl              Waiting for changes from server
+Reconciling changes
+new file ---->            persistence (copy).py  
+local        : new file           modified on 2017-02-27 at  1:49:07  size 2398      rw-rw-r--
+Tianhe-2     : absent
+Propagating updates
+UNISON 2.40.102 started propagating changes at 21:59:45.58 on 13 Mar 2017
+[BGN] Copying persistence (copy).py from /home/saket/sync to //Tianhe-2//home/rozrost/sync
+100%  00:00 ETA               Shortcut: copied /home/rozrost/sync/persistence (copy).py from local file /home/rozrost/sync/persistence.py
+100%  00:00 ETA               [END] Copying persistence (copy).py
+100%  00:00 ETA               UNISON 2.40.102 finished propagating changes at 21:59:45.64 on 13 Mar 2017
+100%  00:00 ETA               Saving synchronizer state
+Synchronization complete at 21:59:45  (1 item transferred, 0 skipped, 0 failed)
+Contacting server...
+Connected [//Tianhe-2//home/rozrost/sync -> //Tianhe-2//home/saket/sync]
+Looking for changes
+/ client.pkl              Waiting for changes from server
+Reconciling changes
+Nothing to do: replicas have not changed since last sync.
